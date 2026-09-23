@@ -1,6 +1,6 @@
 {% set name = "rebound" %}
-{% set version = "5.0.1" %}
-{% set sha256 = "0ddf41cfe48153c60bc97c7c7232a558bc31c98861a3506d12aef8c161b26fc5" %}
+{% set version = "5.2.0" %}
+{% set sha256 = "d5396d9797a760a3ae844c122d9123e72e00754b345cf56f462c4543bbc109f7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
